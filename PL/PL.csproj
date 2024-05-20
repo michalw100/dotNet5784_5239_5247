@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+	  <BaseOutputPath>$(SolutionDir)\bin\</BaseOutputPath>
+	  <OutputPath>$(SolutionDir)\bin\</OutputPath>
+	  <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	  <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+	  <UseCommonOutputDirectory>true</UseCommonOutputDirectory>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="9167.jpg" />
+    <None Remove="image.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BL\BL.csproj" />
+    <ProjectReference Include="..\DalTest\DalTest.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="9167.jpg" />
+    <Resource Include="image.jpg" />
+  </ItemGroup>
+
+</Project>
